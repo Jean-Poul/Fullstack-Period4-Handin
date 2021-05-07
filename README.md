@@ -19,21 +19,21 @@ From the manual of mongodb:
 
 <br>
 To create an index in MongoDB we use the following method:
-```javascript 
+```json 
  db.collection.createIndex()
 ```
 We make use of the following index in our start code:
 The first one is to make an email unique for our friend collection.
 1 means in ascending order and -1 means in descending order.
- ```javascript 
+ ```json 
  friendsCollection.createIndex({ email: 1 }, { unique: true })
  ```
 The second one is to be able to create an index with the property lastUpdated, rank them in ascending order and make them expire after 60 seconds. When we set a boolean to true we assign a date far in the future so the object wont expire within 60 seconds.
- ```javascript  
+ ```json  
  await positionCollection.createIndex({ "lastUpdated": 1 }, { expireAfterSeconds: 60 })
  ```
 The third is so we can be able to calculate on a sphere (see below for more info)
-```javascript 
+```json 
   await positionCollection.createIndex({ location: "2dsphere" })
 ```
 
