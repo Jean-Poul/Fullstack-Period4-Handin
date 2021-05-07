@@ -459,7 +459,7 @@ mutation {
 }
 ```
 
-For index se see the first two questions also see makeTestPostion.ts in the folder utils.
+For indexes see the first two questions also see makeTestPostion.ts in the folder utils.
 
 <br>
 
