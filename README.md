@@ -26,7 +26,8 @@ We make use of the following index in our start code:
 The first one is to make an email unique for our friend collection.
 1 means in ascending order and -1 means in descending order.
  ```javascript 
- friendsCollection.createIndex({ email: 1 }, { unique: true })```
+ friendsCollection.createIndex({ email: 1 }, { unique: true })
+ ```
 The second one is to be able to create an index with the property lastUpdated, rank them in ascending order and make them expire after 60 seconds. When we set a boolean to true we assign a date far in the future so the object wont expire within 60 seconds.
  ```javascript  
  await positionCollection.createIndex({ "lastUpdated": 1 }, { expireAfterSeconds: 60 })
