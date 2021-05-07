@@ -19,6 +19,7 @@ From the manual of mongodb:
 
 <br>
 To create an index in MongoDB we use the following method:
+
 ```json 
  db.collection.createIndex()
  ```
