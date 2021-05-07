@@ -36,6 +36,10 @@ The third is so we can be able to calculate on a sphere (see below for more info
   await positionCollection.createIndex({ location: "2dsphere" })
 ```
 
+*Note: lastUpdated is a TTL index. TTL indexes are special single-field indexes that MongoDB can use to automatically remove documents from a collection after a certain amount of time or at a specific clock time. Data expiration is useful for certain types of information like machine generated event data, logs, and session information that only need to persist in a database for a finite amount of time.
+
+To create a TTL index, use the createIndex() method on a field whose value is either a date or an array that contains date values, and specify the expireAfterSeconds option with the desired TTL value in seconds.*
+
 <br>
 
 ### Explain, using your own code examples, how you have used some of MongoDB's "special" indexes like TTL and 2dsphere and perhaps also the Unique Index.
