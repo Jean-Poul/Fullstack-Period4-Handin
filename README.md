@@ -21,7 +21,7 @@ From the manual of mongodb:
 To create an index in MongoDB we use the following method:
 ```json 
  db.collection.createIndex()
-```
+ ```
 We make use of the following index in our start code:
 The first one is to make an email unique for our friend collection.
 1 means in ascending order and -1 means in descending order.
