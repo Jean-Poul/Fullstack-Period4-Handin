@@ -1,0 +1,3 @@
+mongo is an interactive JavaScript shell interface to MongoDB, which provides a powerful interface for system 
+administrators as well as a way for developers to test queries and operations directly with the database. 
+mongo also provides a fully functional JavaScript environment for use with a MongoDB.
