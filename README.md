@@ -426,7 +426,8 @@ await this.positionCollection.find({
 ```
 
 Playground/GraphiQL queries:
-```mongodb
+```javascript
+
 mutation {
   addPosition(input: {
     email: "pp@b.dk"
@@ -436,7 +437,8 @@ mutation {
 }
 ```
 <br>
-```mongodb
+```javascript
+
 mutation {
   findNearbyFriends(input: {
     email: "dd@b.dk"
